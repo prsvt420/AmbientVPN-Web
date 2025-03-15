@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'core/css/policy.css' %}">
+{% endblock %}
+
+{% block title %}Privacy Policy{% endblock %}
+
+{% block content %}
+<h1>Privacy Policy</h1>
+<section class="container">
+    <div class="text">
+        <h2>1. Introduction</h2>
+        <p>By using our Virtual Private Network ("VPN") service, you agree to the collection and use of
+            information in accordance with this policy.</p>
+    </div>
+    <div class="text">
+        <h2>2. Collection of Information</h2>
+        <p>Personal Data: We collect your Telegram ID for user identification purposes.</p>
+    </div>
+    <div class="text">
+        <h2>3. Use of Information</h2>
+        <p>The collected information is used to provide, maintain, and improve our services, as well as to
+            comply with our legal obligations.</p>
+    </div>
+    <div class="text">
+        <h2>4. Data Sharing and Disclosure</h2>
+        <p>We do not share or sell your personal information to third parties. Data is stored securely, adhering
+            to the necessary regulations and jurisdictions. In cases of legal requests by competent authorities,
+            we may disclose information if it involves a user violating the law using our service.</p>
+    </div>
+    <div class="text">
+        <h2>5. Jurisdiction and Compliance</h2>
+        <p>We under the jurisdiction of the Russian Federation and adheres to its laws and regulations.</p>
+    </div>
+    <div class="text">
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We reserve the right to update or change our Privacy Policy at any time. We will notify you of any
+            changes by posting the new Privacy Policy on our website.</p>
+    </div>
+    <div class="text">
+        <h2>7. Contact Us</h2>
+        <p>For any questions or concerns regarding this Privacy Policy, please contact us at
+            support@ambientvpn.ru.</p>
+    </div>
+</section>
+{% endblock %}

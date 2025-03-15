@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'core/css/index.css' %}">
+
+<style>
+    .main-section {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url('{% static "core/img/forest.webp" %}');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="container main-section bg">
+    <h1>Ambient VPN</h1>
+    <img src="{% static 'core/img/presentation.png' %}" alt="Презентация приложения">
+    <a class="button" href="https://t.me/Ambient_VPN_bot" target="_blank" title="Начать пользование Ambient VPN">Начать</a>
+</section>
+<section class="container info-section">
+    <h2>Почему Ambient VPN?</h2>
+
+    <div class="info-grid">
+        <div class="info-block">
+            <img src="{% static 'core/img/shuttle.png' %}" alt="Высокая скорость">
+            <h2>Высокая скорость</h2>
+            <p>Обеспечиваем подключение только к самым быстрым серверам.</p>
+        </div>
+        <div class="info-block">
+            <img src="{% static 'core/img/switch-on.png' %}" alt="Быстрый доступ">
+            <h2>Быстрый доступ</h2>
+            <p>Пару нажатий и готово.</p>
+        </div>
+        <div class="info-block">
+            <img src="{% static 'core/img/shield.png' %}" alt="Безопасный">
+            <h2>Безопасный</h2>
+            <p>Используем прочную связку сетевых технологий для безопасного выхода в интернет.</p>
+        </div>
+        <div class="info-block">
+            <img src="{% static 'core/img/coin.png' %}" alt="Не дорого">
+            <h2>Не дорого</h2>
+            <p>У нас низкие цены.</p>
+        </div>
+    </div>
+
+</section>
+<footer class="container">
+    <img src="{% static 'core/img/logo.png' %}" alt="Логотип">
+    <p>Ambient VPN</p>
+    <a href="mailto:support@ambientvpn.ru">support@ambientvpn.ru</a>
+    <a href="{% url 'core:policy' %}" class="policy">Политика конфиденциальности</a>
+    <p>Tokarev Denis Aleksandrovich</p>
+</footer>
+{% endblock %}
